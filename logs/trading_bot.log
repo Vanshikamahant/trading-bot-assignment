@@ -1,0 +1,67 @@
+2026-06-12 18:24:09 | DEBUG    | trading_bot.validators | Symbol validated: BTCUSDT
+2026-06-12 18:24:09 | DEBUG    | trading_bot.validators | Symbol validated: BTCUSDT
+2026-06-12 18:24:09 | DEBUG    | trading_bot.validators | Side validated: BUY
+2026-06-12 18:24:09 | DEBUG    | trading_bot.validators | Side validated: BUY
+2026-06-12 18:24:09 | DEBUG    | trading_bot.validators | Order type validated: MARKET
+2026-06-12 18:24:09 | DEBUG    | trading_bot.validators | Order type validated: MARKET
+2026-06-12 18:24:09 | DEBUG    | trading_bot.validators | Quantity validated: 0.001
+2026-06-12 18:24:09 | DEBUG    | trading_bot.validators | Quantity validated: 0.001
+2026-06-12 18:24:09 | INFO     | trading_bot.client | BinanceClient initialised (base_url=https://demo-fapi.binance.com)
+2026-06-12 18:24:09 | INFO     | trading_bot.client | BinanceClient initialised (base_url=https://demo-fapi.binance.com)
+2026-06-12 18:24:09 | DEBUG    | trading_bot.client | REQUEST  GET /fapi/v1/time | params={}
+2026-06-12 18:24:09 | DEBUG    | trading_bot.client | REQUEST  GET /fapi/v1/time | params={}
+2026-06-12 18:24:10 | DEBUG    | trading_bot.client | RESPONSE GET /fapi/v1/time | status=200 | body={"serverTime":1781268849967}
+2026-06-12 18:24:10 | DEBUG    | trading_bot.client | RESPONSE GET /fapi/v1/time | status=200 | body={"serverTime":1781268849967}
+2026-06-12 18:24:10 | INFO     | trading_bot.cli | Connectivity check passed.
+2026-06-12 18:24:10 | INFO     | trading_bot.cli | Connectivity check passed.
+2026-06-12 18:24:10 | INFO     | trading_bot.cli | Executing order: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None stopPrice=None
+2026-06-12 18:24:10 | INFO     | trading_bot.cli | Executing order: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None stopPrice=None
+2026-06-12 18:24:10 | INFO     | trading_bot.orders | Submitting MARKET order: BUY BTCUSDT qty=0.001
+2026-06-12 18:24:10 | INFO     | trading_bot.orders | Submitting MARKET order: BUY BTCUSDT qty=0.001
+2026-06-12 18:24:10 | INFO     | trading_bot.client | Placing order: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=N/A stopPrice=N/A
+2026-06-12 18:24:10 | INFO     | trading_bot.client | Placing order: symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=N/A stopPrice=N/A
+2026-06-12 18:24:10 | DEBUG    | trading_bot.client | REQUEST  POST /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1781268850204, 'recvWindow': 5000}
+2026-06-12 18:24:10 | DEBUG    | trading_bot.client | REQUEST  POST /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': '0.001', 'timestamp': 1781268850204, 'recvWindow': 5000}
+2026-06-12 18:24:10 | DEBUG    | trading_bot.client | RESPONSE POST /fapi/v1/order | status=200 | body={"orderId":15021769929,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"HdvJA7iuY4ZFj7ktNq8Psl","price":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1781268850164}
+2026-06-12 18:24:10 | DEBUG    | trading_bot.client | RESPONSE POST /fapi/v1/order | status=200 | body={"orderId":15021769929,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"HdvJA7iuY4ZFj7ktNq8Psl","price":"0.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","timeInForce":"GTC","type":"MARKET","reduceOnly":false,"closePosition":false,"side":"BUY","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"MARKET","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1781268850164}
+2026-06-12 18:24:10 | INFO     | trading_bot.client | Order placed: orderId=15021769929 status=NEW executedQty=0.0000
+2026-06-12 18:24:10 | INFO     | trading_bot.client | Order placed: orderId=15021769929 status=NEW executedQty=0.0000
+2026-06-12 18:24:10 | INFO     | trading_bot.orders | MARKET order response: {'orderId': 15021769929, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'HdvJA7iuY4ZFj7ktNq8Psl', 'price': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1781268850164}
+2026-06-12 18:24:10 | INFO     | trading_bot.orders | MARKET order response: {'orderId': 15021769929, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'HdvJA7iuY4ZFj7ktNq8Psl', 'price': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1781268850164}
+2026-06-12 18:24:10 | INFO     | trading_bot.cli | Order completed successfully. orderId=15021769929 status=NEW
+2026-06-12 18:24:10 | INFO     | trading_bot.cli | Order completed successfully. orderId=15021769929 status=NEW
+
+2026-06-12 18:24:42 | DEBUG    | trading_bot.validators | Symbol validated: BTCUSDT
+2026-06-12 18:24:42 | DEBUG    | trading_bot.validators | Symbol validated: BTCUSDT
+2026-06-12 18:24:42 | DEBUG    | trading_bot.validators | Side validated: SELL
+2026-06-12 18:24:42 | DEBUG    | trading_bot.validators | Side validated: SELL
+2026-06-12 18:24:42 | DEBUG    | trading_bot.validators | Order type validated: LIMIT
+2026-06-12 18:24:42 | DEBUG    | trading_bot.validators | Order type validated: LIMIT
+2026-06-12 18:24:42 | DEBUG    | trading_bot.validators | Quantity validated: 0.001
+2026-06-12 18:24:42 | DEBUG    | trading_bot.validators | Quantity validated: 0.001
+2026-06-12 18:24:42 | DEBUG    | trading_bot.validators | Price validated: 65000
+2026-06-12 18:24:42 | DEBUG    | trading_bot.validators | Price validated: 65000
+2026-06-12 18:24:42 | INFO     | trading_bot.client | BinanceClient initialised (base_url=https://demo-fapi.binance.com)
+2026-06-12 18:24:42 | INFO     | trading_bot.client | BinanceClient initialised (base_url=https://demo-fapi.binance.com)
+2026-06-12 18:24:42 | DEBUG    | trading_bot.client | REQUEST  GET /fapi/v1/time | params={}
+2026-06-12 18:24:42 | DEBUG    | trading_bot.client | REQUEST  GET /fapi/v1/time | params={}
+2026-06-12 18:24:43 | DEBUG    | trading_bot.client | RESPONSE GET /fapi/v1/time | status=200 | body={"serverTime":1781268883053}
+2026-06-12 18:24:43 | DEBUG    | trading_bot.client | RESPONSE GET /fapi/v1/time | status=200 | body={"serverTime":1781268883053}
+2026-06-12 18:24:43 | INFO     | trading_bot.cli | Connectivity check passed.
+2026-06-12 18:24:43 | INFO     | trading_bot.cli | Connectivity check passed.
+2026-06-12 18:24:43 | INFO     | trading_bot.cli | Executing order: symbol=BTCUSDT side=SELL type=LIMIT qty=0.001 price=65000 stopPrice=None
+2026-06-12 18:24:43 | INFO     | trading_bot.cli | Executing order: symbol=BTCUSDT side=SELL type=LIMIT qty=0.001 price=65000 stopPrice=None
+2026-06-12 18:24:43 | INFO     | trading_bot.orders | Submitting LIMIT order: SELL BTCUSDT qty=0.001 price=65000 tif=GTC
+2026-06-12 18:24:43 | INFO     | trading_bot.orders | Submitting LIMIT order: SELL BTCUSDT qty=0.001 price=65000 tif=GTC
+2026-06-12 18:24:43 | INFO     | trading_bot.client | Placing order: symbol=BTCUSDT side=SELL type=LIMIT qty=0.001 price=65000 stopPrice=N/A
+2026-06-12 18:24:43 | INFO     | trading_bot.client | Placing order: symbol=BTCUSDT side=SELL type=LIMIT qty=0.001 price=65000 stopPrice=N/A
+2026-06-12 18:24:43 | DEBUG    | trading_bot.client | REQUEST  POST /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.001', 'price': '65000', 'timeInForce': 'GTC', 'timestamp': 1781268883284, 'recvWindow': 5000}
+2026-06-12 18:24:43 | DEBUG    | trading_bot.client | REQUEST  POST /fapi/v1/order | params={'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': '0.001', 'price': '65000', 'timeInForce': 'GTC', 'timestamp': 1781268883284, 'recvWindow': 5000}
+2026-06-12 18:24:43 | DEBUG    | trading_bot.client | RESPONSE POST /fapi/v1/order | status=200 | body={"orderId":15021807986,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"spuG0RZ4f3yxEXVTWuYfTL","price":"65000.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1781268883239}
+2026-06-12 18:24:43 | DEBUG    | trading_bot.client | RESPONSE POST /fapi/v1/order | status=200 | body={"orderId":15021807986,"symbol":"BTCUSDT","status":"NEW","clientOrderId":"spuG0RZ4f3yxEXVTWuYfTL","price":"65000.00","origQty":"0.0010","executedQty":"0.0000","cumQty":"0.0000","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0.00","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","priceMatch":"NONE","selfTradePreventionMode":"EXPIRE_MAKER","goodTillDate":0,"updateTime":1781268883239}
+2026-06-12 18:24:43 | INFO     | trading_bot.client | Order placed: orderId=15021807986 status=NEW executedQty=0.0000
+2026-06-12 18:24:43 | INFO     | trading_bot.client | Order placed: orderId=15021807986 status=NEW executedQty=0.0000
+2026-06-12 18:24:43 | INFO     | trading_bot.orders | LIMIT order response: {'orderId': 15021807986, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'spuG0RZ4f3yxEXVTWuYfTL', 'price': '65000.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1781268883239}
+2026-06-12 18:24:43 | INFO     | trading_bot.orders | LIMIT order response: {'orderId': 15021807986, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'spuG0RZ4f3yxEXVTWuYfTL', 'price': '65000.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1781268883239}
+2026-06-12 18:24:43 | INFO     | trading_bot.cli | Order completed successfully. orderId=15021807986 status=NEW
+2026-06-12 18:24:43 | INFO     | trading_bot.cli | Order completed successfully. orderId=15021807986 status=NEW
